@@ -16,3 +16,60 @@ telegram.ext.updater - WARNING - Exiting immediately!
 telegram.ext.updater - WARNING - Exiting immediately!
 telegram.ext.updater - WARNING - Exiting immediately!
 telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot_calculator.py", line 61, in calculator
+    umnogen=int(user_list[0])*int(user_list[1])
+ValueError: invalid literal for int() with base 10: 'е'
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "bot_calculator.py", line 53, in calculator
+    delen=int(user_list[0])/int(user_list[1])
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot_calculator.py", line 55, in calculator
+    pdate.message.reply_text('На ноль делить нельзя!')
+NameError: name 'pdate' is not defined
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "bot_calculator.py", line 53, in calculator
+    delen=int(user_list[0])/int(user_list[1])
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot_calculator.py", line 57, in calculator
+    r
+NameError: name 'r' is not defined
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/home/ilya/.local/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot_calculator.py", line 52, in calculator
+    delen=int(user_list[0])/int(user_list[1])
+ValueError: invalid literal for int() with base 10: 'а'
+telegram.ext.updater - WARNING - Exiting immediately!
