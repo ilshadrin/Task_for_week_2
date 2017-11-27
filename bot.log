@@ -73,3 +73,5 @@ Traceback (most recent call last):
     delen=int(user_list[0])/int(user_list[1])
 ValueError: invalid literal for int() with base 10: 'а'
 telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.updater - WARNING - Exiting immediately!

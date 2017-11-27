@@ -1,3 +1,10 @@
+'''
+Научите бота выполнять основные арифметические действия с числами: сложение, вычитание, умножение и деление. Если боту сказать “2-3=”, он должен ответить “-1”. Все выражения для калькулятора должны заканчиваться знаком равно.
+
+Дополнительно: не забудьте обработать возможные ошибки во вводе: пробелы, отсутствие чисел, деление на ноль.
+
+'''
+
 # Импортируем нужные компоненты
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 # Функция, которая соединяется с платформой Telegram, "тело" нашего бота
@@ -82,7 +89,6 @@ def main():
     updater = Updater("478411131:AAFn2nvMqaDicbbqE2Xsta_L4cQu1MY-zPM")
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
-    #dp.add_handler(CommandHandler("calculator",calculator))
     dp.add_handler(MessageHandler(Filters.text, calculator))
 
     
