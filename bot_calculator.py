@@ -36,7 +36,11 @@ def calculator(bot, update):
             user_list=user_input.split('+')                  #делаем из строки список, элементы разделены +   
             print('user_list',user_list )
 
-            sum=int(user_list[0])+int(user_list[1])    # считаем суммму 0го и 1го элемента списка
+            try:
+                sum=int(user_list[0])+int(user_list[1])    # считаем суммму 0го и 1го элемента списка
+            except ValueError:
+                   update.message.reply_text('Это не число!')
+
             print('sum', sum)
             update.message.reply_text(sum)
 
@@ -46,7 +50,11 @@ def calculator(bot, update):
             user_list=user_input.split('-')
             print('user_list',user_list )
 
-            minus=int(user_list[0])-int(user_list[1])
+            try:
+                minus=int(user_list[0])-int(user_list[1])
+            except ValueError:
+                   update.message.reply_text('Это не число!')
+
             print('minus', minus)
             update.message.reply_text(minus)
         elif user_input.find('/')>0:
@@ -60,7 +68,8 @@ def calculator(bot, update):
             
             except ZeroDivisionError:
                    update.message.reply_text('На ноль делить нельзя!')
-                                           
+            except ValueError:
+                   update.message.reply_text('Это не число!')                              
 
             print('delen', delen)
             update.message.reply_text(delen)
@@ -71,7 +80,11 @@ def calculator(bot, update):
             user_list=user_input.split('*')
             print('user_list',user_list )
 
-            umnogen=int(user_list[0])*int(user_list[1])
+            try:
+                umnogen=int(user_list[0])*int(user_list[1])
+            except ValueError:
+                   update.message.reply_text('Это не число!')
+                       
             print('umnogen', umnogen)
             update.message.reply_text(umnogen)
         else:
